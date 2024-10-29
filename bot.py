@@ -5,9 +5,9 @@ from mimetypes import guess_type
 from natsort import natsorted
 
 # Configuración del bot de Telegram
-api_id = '11029886'
-api_hash = '4e74899bfd41879c6a4b48cf6a07f456'
-bot_token = '6184630791:AAEmzSRImou2w8IaSDGqu4EDSBiSWXcgqME'
+api_id = ''
+api_hash = ''
+bot_token = ''
 
 # Ruta de la carpeta de descargas
 DOWNLOAD_FOLDER = "./downloads"
