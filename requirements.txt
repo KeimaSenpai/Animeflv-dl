@@ -1,3 +1,5 @@
 animeflv
+aiohttp
+pyrogram
 cloudscraper
 https://github.com/KeimaSenpai/PyBypass/archive/refs/tags/1.0.0.zip

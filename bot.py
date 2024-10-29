@@ -1,11 +1,9 @@
 import os
-import random
 import asyncio
 from animeflv import AnimeFLV
 import PyBypass as bypasser
 import requests
 from mimetypes import guess_extension
-from yarl import URL
 from aiohttp import ClientSession, ClientResponseError
 from pyrogram import Client, filters
 
