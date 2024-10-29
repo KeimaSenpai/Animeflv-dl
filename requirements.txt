@@ -2,4 +2,6 @@ animeflv
 aiohttp
 pyrogram
 cloudscraper
+natsort
+opencv-python
 https://github.com/KeimaSenpai/PyBypass/archive/refs/tags/1.0.0.zip
