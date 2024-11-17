@@ -1,7 +1,5 @@
 aiohttp
 pyrogram
-uvicorn
-fastapi
 cloudscraper
 opencv-python
 opencv-contrib-python
