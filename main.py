@@ -1,11 +1,10 @@
 import asyncio
 import os
 import time
-from aiohttp import ClientSession
 import cv2
 from pyrogram import Client, filters
-from animeflv import AnimeFLV
-from download import download_files
+from modules.animeflv import AnimeFLV
+from modules.download import download_files
 
 # Configuración del bot de Telegram
 api_id = '11029886'
@@ -81,24 +80,6 @@ async def upload_video(client, message):
     await message.reply("Por favor, envíame la URL del episodio que deseas descargar y subir.")
     user_search_context[message.from_user.id] = {"stage": "waiting_for_upload"}
 
-# Función de callback para actualizar el progreso en Telegram
-# async def progress_callback(client, message_id, chat_id, filename, total, current, total_size):
-#     # text = f"{filename} - {percent}% ({downloaded_size}/{total_size})"
-#     # Crear la barra de progreso
-#     bar_length = 10
-#     filled_length = int(total * bar_length / 100)
-#     bar = '◆' * filled_length + '◇' * (bar_length - filled_length)
-    
-#     # Crear el mensaje de progreso
-#     text = (
-#         f"📦 Download video\n\n"
-#         f"🏷 Name: {filename}\n"
-#         f"[{bar}]\n"
-#         f"⌛️ Progreso: {total}%\n"
-#         f"💾 {current} / {total_size}\n"
-#     )
-#     time.sleep(1)
-#     await client.edit_message_text(chat_id, message_id, text)
 
 # Funciones de utilidad para el formato
 def format_size(size):

@@ -1,5 +1,6 @@
 aiohttp
 pyrogram
+TgCrypto
 cloudscraper
 opencv-python
 opencv-contrib-python

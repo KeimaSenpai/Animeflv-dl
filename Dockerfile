@@ -5,6 +5,10 @@ FROM python:3.11.6
 WORKDIR /app
 
 RUN apt update && apt upgrade -y
+
+RUN apt-get update && apt-get install -y \
+    libgl1-mesa-glx \
+    && rm -rf /var/lib/apt/lists/*
 # Copia el archivo de requisitos al contenedor
 COPY requirements.txt .
 
