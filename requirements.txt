@@ -1,5 +1,7 @@
 aiohttp
 pyrogram
+fastapi
+uvicorn
 TgCrypto
 cloudscraper
 opencv-python
