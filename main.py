@@ -10,8 +10,6 @@ from modules.download import download_files
 api_id = '11029886'
 api_hash = '4e74899bfd41879c6a4b48cf6a07f456'
 bot_token = '5868896372:AAGqKjVCQmr0YFwa6sv-8qjjVvPUBq_UST4'
-# ---------------------Test
-# bot_token = '5998213610:AAHUfeee08ryYWrRhLJ0yI8SL8F0RQu0wKs'
 
 # Ruta de la carpeta de descargas
 DOWNLOAD_FOLDER = "./downloads"
