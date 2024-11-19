@@ -2,7 +2,8 @@ aiohttp
 pyrogram
 fastapi
 uvicorn
-mega.py
+# mega.py
+yt-dlp
 TgCrypto
 cloudscraper
 opencv-python

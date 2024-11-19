@@ -9,7 +9,8 @@ from modules.download import download_files
 # Configuración del bot de Telegram
 api_id = '11029886'
 api_hash = '4e74899bfd41879c6a4b48cf6a07f456'
-bot_token = '5868896372:AAGqKjVCQmr0YFwa6sv-8qjjVvPUBq_UST4'
+# bot_token = '5868896372:AAGqKjVCQmr0YFwa6sv-8qjjVvPUBq_UST4'
+bot_token = '5998213610:AAHUfeee08ryYWrRhLJ0yI8SL8F0RQu0wKs'
 
 # Ruta de la carpeta de descargas
 DOWNLOAD_FOLDER = "./downloads"
@@ -66,7 +67,7 @@ def get_video_metadata(video_path):
 # Comando /start
 @app.on_message(filters.command("start"))
 async def start(client, message):
-    await message.reply("¡Hola! Soy tu bot de anime. Usa el comando /download para buscar un anime.")
+    await message.reply("¡Hola! Soy tu bot de anime. Usa el comando /download para buscar un anime.\n\nv1.0")
 
 # Comando /search
 @app.on_message(filters.command("search"))
