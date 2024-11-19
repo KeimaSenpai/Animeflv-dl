@@ -135,7 +135,7 @@ async def download_progress_callback(client, message_id, chat_id, filename, curr
             f"├ Velocidad: {speed_str}\n"
             f"└ Tiempo restante: {format_time(eta)}"
         )
-        time.sleep(1)
+        time.sleep(2)
         await client.edit_message_text(chat_id, message_id, text)
     except Exception as e:
         print(f"Error en progress_callback: {e}")
@@ -174,7 +174,7 @@ async def upload_progress_callback(client, message_id, chat_id, filename, curren
             f"├ Velocidad: {speed_str}\n"
             f"└ Tiempo restante: {format_time(eta)}"
         )
-        time.sleep(1)
+        time.sleep(2)
         await client.edit_message_text(chat_id, message_id, text)
     except Exception as e:
         print(f"Error en progress_callback: {e}")

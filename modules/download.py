@@ -3,6 +3,7 @@ import os
 import time
 import PyBypass as bypasser
 from aiohttp import ClientResponseError, ClientSession
+# from megaAPI import Mega
 
 LOCAL_DL = "./downloads"
 MAX_RETRIES = 5
@@ -13,6 +14,7 @@ def get_size(resp) -> int:
     except (TypeError, ValueError):
         return 0
 
+
 async def download_file(url: str, session: ClientSession, progress_callback=None):
     """
     Descarga un archivo desde una URL y muestra el progreso.
@@ -22,11 +24,16 @@ async def download_file(url: str, session: ClientSession, progress_callback=None
         session (ClientSession): Sesión aiohttp
         progress_callback (callable): Función de callback para actualizar el progreso
     """
-    try:
-        bypassed_link, filename = bypasser.bypass(url)
-    except Exception as e:
-        print(f"Error al procesar la URL con PyBypass: {e}")
-        return None
+    if "streamtape.com" in url:
+        try:
+            bypassed_link, filename = bypasser.bypass(url)
+        except Exception as e:
+            print(f"Error al procesar la URL con PyBypass: {e}")
+            return None
+    else:
+        bypassed_link = url
+        # Obtiene el nombre del archivo de la URL y limpia los parámetros
+        filename = url.split('/')[-1].split('?')[0]
 
     retries = 0
     start_time = time.time()
@@ -80,6 +87,8 @@ async def download_file(url: str, session: ClientSession, progress_callback=None
     
     print(f"Descarga fallida después de {MAX_RETRIES} intentos para {url}")
     return None
+
+# ------------------------------------------------------------
 
 async def download_files(urls, progress_callback=None):
     """
