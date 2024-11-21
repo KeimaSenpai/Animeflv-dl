@@ -188,7 +188,7 @@ class AnimeTelegramBot:
 
 def main():
     # Reemplaza 'TU_TOKEN_AQUI' con tu token de Telegram
-    token = os.getenv('TELEGRAM_BOT_TOKEN', '5998213610:AAFy7Z9ThES-0ZrDbcoujhnJRuVaaq08_hE')
+    token = os.getenv('TELEGRAM_BOT_TOKEN', '5868896372:AAEDsAJFASvW6JSH0NxiD1pGhH5q1mTc8GM')
     
     # Crear la aplicación
     application = Application.builder().token(token).build()
