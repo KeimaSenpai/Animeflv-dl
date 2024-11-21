@@ -1,11 +1,7 @@
-aiohttp
-pyrogram
 fastapi
 uvicorn
-# mega.py
-yt-dlp
-TgCrypto
+python-telegram-bot
+requests
+beautifulsoup4
 cloudscraper
-opencv-python
-opencv-contrib-python
 https://github.com/KeimaSenpai/PyBypass/archive/refs/tags/1.0.0.zip
